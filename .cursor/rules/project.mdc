@@ -1,0 +1,29 @@
+---
+alwaysApply: true
+---
+
+# Project Context
+
+This project is a banking platform built using a microfrontend architecture.
+
+The stack includes React, TypeScript, Vite, React Router, Tailwind CSS, shadcn/ui, and Module Federation.
+
+## UI
+
+When implementing or modifying UI, use `apps/auth/src/pages/auth/Signup.tsx` as the primary visual reference.
+
+Match its:
+- layout
+- spacing
+- typography
+- styling
+- shadcn/ui component usage
+- overall visual language
+
+Reuse existing components and patterns whenever possible.
+
+## Rules
+
+- Keep changes focused on the requested task.
+- Do not modify unrelated files.
+- Do not add comments to code.

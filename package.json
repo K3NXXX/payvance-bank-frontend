@@ -1,0 +1,25 @@
+{
+	"name": "payvance-frontend",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "turbo dev",
+		"dev:shell": "turbo dev --filter=@payvance/shell",
+		"dev:auth": "turbo dev --filter=@payvance/auth",
+		"build": "turbo build",
+		"lint": "turbo lint"
+	},
+	"devDependencies": {
+		"@payvance/config": "workspace:*",
+		"@eslint/js": "^10.0.1",
+		"eslint": "^10.10.0",
+		"eslint-plugin-react-hooks": "^7.1.1",
+		"eslint-plugin-react-refresh": "^0.5.6",
+		"globals": "^17.12.0",
+		"turbo": "^2.5.8",
+		"typescript": "~6.0.2",
+		"typescript-eslint": "^8.69.0"
+	},
+	"packageManager": "pnpm@9.15.9"
+}
