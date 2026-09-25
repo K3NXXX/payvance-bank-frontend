@@ -8,15 +8,22 @@
 		"dev:shell": "turbo dev --filter=@payvance/shell",
 		"dev:auth": "turbo dev --filter=@payvance/auth",
 		"build": "turbo build",
-		"lint": "turbo lint"
+		"lint": "turbo lint",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"docker:up": "docker compose --env-file docker/.env -f docker/docker-compose.yml up",
+		"docker:up:build": "docker compose --env-file docker/.env -f docker/docker-compose.yml up --build",
+		"docker:down": "docker compose --env-file docker/.env -f docker/docker-compose.yml down"
 	},
 	"devDependencies": {
-		"@payvance/config": "workspace:*",
 		"@eslint/js": "^10.0.1",
+		"@payvance/config": "workspace:*",
 		"eslint": "^10.10.0",
+		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-react-hooks": "^7.1.1",
 		"eslint-plugin-react-refresh": "^0.5.6",
 		"globals": "^17.12.0",
+		"prettier": "^3.9.6",
 		"turbo": "^2.5.8",
 		"typescript": "~6.0.2",
 		"typescript-eslint": "^8.69.0"

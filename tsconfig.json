@@ -2,6 +2,8 @@
 	"files": [],
 	"references": [
 		{ "path": "./apps/shell" },
-		{ "path": "./apps/auth" }
+		{ "path": "./apps/auth" },
+		{ "path": "./apps/dashboard" },
+		{ "path": "./packages/ui" }
 	]
 }

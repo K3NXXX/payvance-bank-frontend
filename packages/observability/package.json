@@ -1,0 +1,15 @@
+{
+	"name": "@payvance/observability",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"dependencies": {
+		"@sentry/react": "^10.38.0"
+	},
+	"peerDependencies": {
+		"react": "^19.0.0"
+	}
+}

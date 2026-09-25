@@ -16,8 +16,8 @@ export const signupSchema = z
 			.min(2, 'Full name must be at least 2 characters')
 			.max(100, 'Full name must be at most 100 characters')
 			.regex(
-				/^[a-zA-ZÀ-ÿ]+(?:[ '-][a-zA-ZÀ-ÿ]+)+$/,
-				'Enter your first and last name',
+				/^[a-zA-ZÀ-ÿ]+(?:[-'][a-zA-ZÀ-ÿ]+)* [a-zA-ZÀ-ÿ]+(?:[-'][a-zA-ZÀ-ÿ]+)*$/,
+				'Enter your first and last name only',
 			),
 		email: z
 			.string()

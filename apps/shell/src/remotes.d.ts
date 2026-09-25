@@ -3,4 +3,13 @@ declare module 'auth/AuthApp' {
 
 	const AuthApp: ComponentType
 	export default AuthApp
+
+}
+
+declare module 'dashboard/DashboardApp' {
+	import type { ComponentType } from 'react'
+
+	const DashboardApp: ComponentType
+	export default DashboardApp
+
 }
