@@ -10,12 +10,17 @@ import AuthBootstrap from '@/providers/AuthBootstrap'
 const AuthApp = lazy(() => import('auth/AuthApp'))
 const DashboardApp = lazy(() => import('dashboard/DashboardApp'))
 
+
+
 function App() {
+	if (import.meta.env.DEV && new URLSearchParams(window.location.search).has('sentry')) {
+		throw new Error('Sentry test — render')
+	  }
 	return (
 		<AuthBootstrap>
 			<Routes>
 				<Route
-					path="/"
+					path='/'
 					element={
 						<Navigate
 							to={isAuthenticated() ? APP_ROUTES.DASHBOARD : APP_ROUTES.LOGIN}
@@ -47,7 +52,7 @@ function App() {
 				</Route>
 
 				<Route
-					path="*"
+					path='*'
 					element={
 						<Navigate
 							to={isAuthenticated() ? APP_ROUTES.DASHBOARD : APP_ROUTES.LOGIN}

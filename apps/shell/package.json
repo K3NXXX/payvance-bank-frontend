@@ -14,10 +14,12 @@
 		"@payvance/auth-session": "workspace:*",
 		"@payvance/mf": "workspace:*",
 		"@payvance/store": "workspace:*",
+		"@sentry/react": "^10.38.0",
 		"axios": "^1.20.0",
 		"react": "^19.2.8",
 		"react-dom": "^19.2.8",
-		"react-router-dom": "^7.18.3"
+		"react-router-dom": "^7.18.3",
+		"web-vitals": "^6.2.2"
 	},
 	"devDependencies": {
 		"@payvance/config": "workspace:*",

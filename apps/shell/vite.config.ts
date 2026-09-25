@@ -1,8 +1,12 @@
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-import { createShellRemotes, MFE_PORTS, SHARED_DEPENDENCIES } from '@payvance/mf'
 import { federation } from '@module-federation/vite'
+import {
+	createShellRemotes,
+	MFE_PORTS,
+	SHARED_DEPENDENCIES,
+} from '@payvance/mf'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
@@ -15,6 +19,7 @@ export default defineConfig({
 			'@': path.resolve(dirname, 'src'),
 		},
 	},
+	build: { sourcemap: true },
 	plugins: [
 		react(),
 		federation({
